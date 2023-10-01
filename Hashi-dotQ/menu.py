@@ -1,5 +1,5 @@
 from datetime import datetime
-from core.button import Button
+from core.gameElements import Button
 from core.game import *
 from core.solver import *
 import os

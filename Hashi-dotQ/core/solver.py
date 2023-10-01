@@ -1,5 +1,4 @@
-from .bridge import *
-from .circle import *
+from .gameElements import *
 import itertools
 
 

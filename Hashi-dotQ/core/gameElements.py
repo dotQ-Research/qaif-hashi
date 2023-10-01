@@ -1,7 +1,7 @@
-import random
 from operator import attrgetter
 from .solver import *
 from .display import *
+import random
 import copy
 import pygame
 
@@ -24,7 +24,7 @@ class Board:
     def generate_default_board(self):
         for i in range(5):
             for j in range(6):
-                self.board.append(Circle(0, j * 100 + 50, i * 100 + 50, circle_violet))
+                self.board.append(Circle(0, j * 100 + 50, i * 100 + 50, circle_green))
         return self.board
 
     def generate_board(self):
@@ -87,14 +87,14 @@ class Board:
                         self.list_circle[i].value += value
                         self.list_circle[i].close_neighbors[j].value += value
                         self.list_bridge.append(
-                            Bridge(self.list_circle[i], self.list_circle[i].close_neighbors[j], violet, value))
+                            Bridge(self.list_circle[i], self.list_circle[i].close_neighbors[j], green, value))
             if self.list_circle[i].value == 0:
                 for j in range(len(self.list_circle[i].close_neighbors)):
                     value = random.randint(1, 2)
                     self.list_circle[i].value += value
                     self.list_circle[i].close_neighbors[j].value += value
                     self.list_bridge.append(
-                        Bridge(self.list_circle[i], self.list_circle[i].close_neighbors[j], violet, value))
+                        Bridge(self.list_circle[i], self.list_circle[i].close_neighbors[j], green, value))
 
     def update(self, event):
         for circle in self.list_circle:
@@ -167,7 +167,7 @@ class Button:
     def show(self):
         pygame.draw.rect(game_display, self.color, (self.x, self.y, self.w, self.h))
         self.position_of_text = ((self.x + (self.w / 2)), (self.y + (self.h / 2)))
-        text_display(self.text, self.size, dark_violet, self.position_of_text)
+        text_display(self.text, self.size, dark_green, self.position_of_text)
 
     def change_color(self, color):
         self.color = color
@@ -175,7 +175,7 @@ class Button:
     def backlight(self):
         mouse = pygame.mouse.get_pos()
         if self.x + self.w > mouse[0] > self.x and self.y + self.h > mouse[1] > self.y:
-            self.change_color(bright_violet)
+            self.change_color(bright_green)
             self.show()
 
     def is_clicked(self):

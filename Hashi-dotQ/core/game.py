@@ -1,7 +1,6 @@
 from .randomize import Randomize
-from .board import Board
-from .bridge import *
-from .settings import *
+from .gameElements import Board
+from .gameElements import *
 from pygame import mixer
 
 mixer.init()
