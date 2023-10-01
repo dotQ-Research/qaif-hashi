@@ -1,0 +1,21 @@
+width: 800
+height: 500
+size : !!python/tuple [800,500]
+
+c1 : !!python/tuple [45, 22, 80]
+c2 : !!python/tuple [45, 22, 81]
+c3 : !!python/tuple [45, 21, 80]
+c4 : !!python/tuple [45, 21, 81]
+c5 : !!python/tuple [55, 22, 80]
+c6 : !!python/tuple [44, 21, 80]
+c7 : !!python/tuple [44, 21, 81]
+c8 : !!python/tuple [45, 22, 82]
+c9 : !!python/tuple [45, 23, 80]
+white : !!python/tuple [255, 255, 255]
+black: !!python/tuple [0,0,0]
+max_circle : !!python/tuple [230, 227, 200]
+green : !!python/tuple [44, 233, 44]
+bright_green : !!python/tuple [97, 213, 132]
+dark_green : !!python/tuple [56, 148, 56]
+blur_green : !!python/tuple [135, 208, 205]
+circle_green : !!python/tuple [24, 152, 24, 55.9]
