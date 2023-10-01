@@ -34,5 +34,5 @@ clock = pygame.time.Clock()
 
 
 def load_file():
-    bg_img = pygame.image.load('./Hashi-dotQ/core/background2.xcf')
+    bg_img = pygame.image.load('./Hashi-dotQ/core/background2.png')
     return pygame.transform.scale(bg_img,(width,height))
