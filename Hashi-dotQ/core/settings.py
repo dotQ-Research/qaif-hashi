@@ -6,7 +6,7 @@ def tuple_constructor(loader, node):
 
 yaml.SafeLoader.add_constructor('tag:yaml.org,2002:python/tuple', tuple_constructor)
 
-with open("Hashi-dotQ/core/settings.yaml") as f:
+with open("Hashi-dotQ/core/yaml/settings.yaml") as f:
     __data = yaml.safe_load(f)
 
 size = width, height = 800, 500
@@ -34,5 +34,5 @@ clock = pygame.time.Clock()
 
 
 def load_file():
-    bg_img = pygame.image.load('./Hashi-dotQ/core/background2.png')
+    bg_img = pygame.image.load('./Hashi-dotQ/core/img/background2.png')
     return pygame.transform.scale(bg_img,(width,height))

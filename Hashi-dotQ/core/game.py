@@ -4,8 +4,8 @@ from .gameElements import *
 from pygame import mixer
 
 mixer.init()
-clic_sound = mixer.Sound("Hashi-dotQ/core/clic.mp3")
-clic_island_complete = mixer.Sound("Hashi-dotQ/core/island_complete.mp3")
+clic_sound = mixer.Sound("Hashi-dotQ/core/sounds/clic.mp3")
+clic_island_complete = mixer.Sound("Hashi-dotQ/core/sounds/island_complete.mp3")
 
 def set_level(s):
     if s == 'easy':
