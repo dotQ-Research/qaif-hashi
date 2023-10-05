@@ -98,7 +98,6 @@ def ui_choose_level():
 
         text_display("Select level", 70, dark_green, position)
 
-        btn(Button(350, 250, 100, 50, green, "Easy", 30), set_game, "easy")
         btn(Button(350, 320, 100, 50, green, "Medium", 30), set_game, "midi")
         btn(Button(350, 390, 100, 50, green, "Hard", 30), set_game, "hard")
 
