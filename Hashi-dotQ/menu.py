@@ -98,8 +98,8 @@ def ui_choose_level():
 
         text_display("Select level", 70, dark_green, position)
 
-        btn(Button(350, 320, 100, 50, green, "Medium", 30), set_game, "midi")
-        btn(Button(350, 390, 100, 50, green, "Hard", 30), set_game, "hard")
+        btn(Button(350, 320, 100, 50, green, "Level 1", 30), set_game, "midi")
+        btn(Button(350, 390, 100, 50, green, "Level 2", 30), set_game, "hard")
 
         pygame.display.update()
         clock.tick(15)
