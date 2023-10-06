@@ -73,11 +73,38 @@ GitHub ID: Ricardo
 
 
 # Game Summary
+The idea is to use Classical Hashi to understand the concept to understand the
+concept of correcting errors on entangled states using parity measurements.
+This will be done through a two part game (for each level).
 
+# Description:
+- [ ] Each island corespond to a Qubit
+- [ ] The number on each qubit (island) corresponds to the number of qubits that are
+- [ ] entangled with the island.
+- [ ] The bridges correspond in the first part to the entanglement between qubits
+and the parity measurement in the second part. I will discuss this more in details.
 
 ## Game rules
+Rules Level 1: 
+This is the only rule that has to change compared to Classical Hashi. There must
+be at most a single bridge between two qubits. If anybody can give an
+explanation of what having two entanglement links between same qubits could
+mean, that rule could stay also.
+The bridges cannot cross each other. This could mean we cannot copy quantum
+unknown quantum states du to the No Cloning Theorem.
+Qubits can only be linked perpendicularly : this could be a constraint on the
+hardware in which we want to encode our qubits.
+The goal is to connect all the qubits in the islands in a single group of entangled
+qubits, while respecting the above rules. This could be a useful ressource for
+fault-tolerance.
 
-We have developed a Quantum Game “ Quantum Hashi” using Python.
+Rules Level 2:
+We start with a full map where some parity measurements have been flipped to
+1, indicating the presence of a bit flip error in some of our qubits or the parity
+measurement itself.
+The goal is to find the faulty qubits or parity measurement and correct them (by
+using some interactive clics) to ensure all the parity measurements are back to 0.
+And that's what will be considered a win.
 
 
 ## Game play 
@@ -127,8 +154,11 @@ Characterizing the player and conceptualizing the quantum world in a way that is
 
 # Future Plans
 
-1. Add more levels to introduce more quantum gates and different types of noise obstacles to the game.
-2. Introduce more quantum computing concepts eg. Entanglement, Quantum Tunneling, etc.
+1. The game can be adapted to a different Bell pair but that will require a
+reinterpretation of the results of the parity measurements. This add some
+unecessary complexity.
+2. We could also consider the case of Phase Flip errors, it will not change the
+principes of the game
 
 
 
