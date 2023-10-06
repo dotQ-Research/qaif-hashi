@@ -68,17 +68,7 @@ GitHub ID: Ricardo
 
 ------------
 
-**Rahul**
 
-
-Discord ID: Rahul
-
-
-GitHub ID: GitHub ID: Rahul
-
-
-
-------------
 
 
 
