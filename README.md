@@ -1,6 +1,6 @@
 **Quantum Games HACKATHON 2023**
 
-# :space_invader: Quantum Hashi
+# :space_invader: Quantum Hashi- Team DotQ
 
 - [Team Introduction](#team-introduction)
 - [Game Summary](#game-summary)
