@@ -11,7 +11,7 @@ with open("Hashi-dotQ/core/yaml/settings.yaml") as f:
 
 size = width, height = 800, 500
 game_display = pygame.display.set_mode(size)
-pygame.display.set_caption('Hashi')
+pygame.display.set_caption('Quantum Hashi')
 
 # colors
 c1 = __data["c1"]

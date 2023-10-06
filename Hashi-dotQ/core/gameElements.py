@@ -36,7 +36,7 @@ class Board:
         self.user_list_bridge = self.solver.solve(self.list_circle)
 
     def random_board(self):
-        n = random.choice(self.board)
+        n = (random.choice(self.board))
         self.list_circle.append(n)
         for i in range(1, self.number_of_circle):
             for j in range(len(self.board)):
@@ -80,9 +80,9 @@ class Board:
             for j in range(len(self.list_circle[i].close_neighbors)):
                 if self.list_circle[i].close_neighbors[j].visited is False:
                     if len(self.list_circle[i].close_neighbors) == 1:
-                        value = random.randint(1, 2)
+                        value = 1#random.randint(1, 2)
                     else:
-                        value = random.randint(0, 2)
+                        value = 1#random.randint(0, 2)
                     if value != 0:
                         self.list_circle[i].value += value
                         self.list_circle[i].close_neighbors[j].value += value
@@ -102,9 +102,6 @@ class Board:
             circle.update_color()
             if z is not None:
                 return z
-
-from .display import *
-
 
 class Bridge:
     def __init__(self, from_circle, to_circle, color, value):
