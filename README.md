@@ -45,7 +45,7 @@ GitHub ID: Enrique
 ------------
 
 
-**Hanzi Li**
+**Bakhao**
 
 
 Discord ID: Bakhao
@@ -139,12 +139,7 @@ Characterizing the player and conceptualizing the quantum world in a way that is
 
 1. Add more levels to introduce more quantum gates and different types of noise obstacles to the game.
 2. Introduce more quantum computing concepts eg. Entanglement, Quantum Tunneling, etc.
-3. Introduce more graphics and animations in the Game
-4. Introduce multiple qubits to the game
-5. Introduce error correcting codes to the game which can help the player restore the state of qubit after they come in contact with the noise balls
-6. Introduce engaging characters for the game storyline. Represent them as Qubits, state 0 being a bad person, and state 1 a good character. Through life experiences(quantum gates), the character chooses and affects its inner state, and then after a measurement (situation) decides to be either bad or good
-7. Introduce engaging characters for the game storyline
-8. Represent them as Qubits, state 0 being a bad person, and state 1 a good character. Through life experiences(quantum gates), the character chooses and affects its inner state, and then after a measurement (situation) decides to be either bad or good
+
 
 
 # License
