@@ -1,4 +1,4 @@
-**Quantum Games HACKATHON 2023**
+**Quantum AI Foundation Quantum Games HACKATHON 2023**
 
 # :space_invader: Quantum Hashi- Team DotQ
 
