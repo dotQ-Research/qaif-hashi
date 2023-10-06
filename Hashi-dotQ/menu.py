@@ -26,7 +26,8 @@ def set_game(s: str) -> None:
     g.board.set_neighbors()
     g.board.set_close_neighbors()
     g.board.set_bridges()
-    ui_gameloop(g)
+    if s == "hard": ui_lvl2_explain(g)
+    else: ui_lvl1_explain(g)
 
 def check_iter() -> None:
     for event in pygame.event.get():
@@ -74,6 +75,33 @@ def btn_clear_clicked(g: Game):
 
 # ----------------- UI METHODS ------------------------
 
+def ui_lvl1_explain(g):
+    pygame.display.update()
+    clock.tick(15)
+    while True:
+        check_iter()
+        # We might get one text_display per line of info
+        text_display("Let\'s encode our qubits! bla bla bla ...", 30, dark_green, (position[0], position[1] - 20))
+
+        btn(Button(350, 250, 150, 50, green, "|Let's play!>", 30), ui_gameloop, g)
+
+        pygame.display.update()
+        clock.tick(15)
+
+def ui_lvl2_explain(g):
+    pygame.display.update()
+    clock.tick(15)
+    while True:
+        check_iter()
+        # We might get one text_display per line of info
+        text_display("Now let's add reality. Let's add error on the grid", 30, dark_green, (position[0], position[1] - 20))
+
+        btn(Button(350, 250, 150, 50, green, "|Got it>", 30), ui_gameloop, g)
+
+        pygame.display.update()
+        clock.tick(15)
+
+
 def ui_play_again():
     pygame.display.update()
     clock.tick(15)
@@ -104,7 +132,7 @@ def ui_choose_level():
         pygame.display.update()
         clock.tick(15)
 
-def ui_gameloop(g: Game, file=None):
+def ui_gameloop(g: Game):
     pygame.display.update()
     clock.tick(15)
 
@@ -114,7 +142,7 @@ def ui_gameloop(g: Game, file=None):
         
         btn(Button(650, 180, 120, 50, green, "Hint", 25),btn_hint_clicked,g)
         btn(Button(650, 80, 120, 50, green, "Clean", 25),btn_clear_clicked,g)
-
+ 
         g.board.generate_board()
         check(clicked_list, g)
         print_bridge(g.board.user_list_bridge)
