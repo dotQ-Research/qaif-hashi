@@ -89,8 +89,8 @@ In Quantum Hashi, the islands are qubits and the bridges are entanglement links.
 - [ ] The number on each qubit (island) that tells you how many other qubits it's entangled with.
 - [ ] The bridges correspond in the first part to the entanglement link between pairs of qubits
 and in the second part to the syndrome measurement. It will discussed more in detail.
-For a much more simplified rule, see [simplified rules](https://github.com/dotQ-Research/qaif-hashi/blob/main/Simplified%20rules.md)
-
+- [ ] For a much more simplified rule, see [simplified rules](https://github.com/dotQ-Research/qaif-hashi/blob/main/Simplified%20rules.md)
+- [ ] For a quick introduction to what error correction is and the game significance see [Error Correction](https://github.com/dotQ-Research/qaif-hashi/blob/main/error%20correctio.md)
 # Part 1
 
 ## Game Rules
