@@ -116,8 +116,9 @@ This rule is very important since it ensures that measuring directly some qubits
 
 1. **Click with your mouse on two qubits to link them. Click on the same qubits to unlink them.**
 2. **Once a qubit has as many entangled links as the number on it, it will switch to a different colour.**
-3. **Once all qubits are fully connected in a single group, you win.**
-4. [Watch the Gameplay/Walthrough](PUT LINK HERE)
+3. **Finding the most optimal entanglement map wins you the game**
+4. **Once all qubits are fully connected in a single group, you win.**
+5. [Watch the Gameplay/Walthrough](PUT LINK HERE)
 
 
 # Part 2
