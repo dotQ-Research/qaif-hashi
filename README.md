@@ -34,11 +34,11 @@ GitHub ID: **AbdullahKazi500**
 
 ------------
 
-**Enrique**
+**Enrique Anguiano Vara**
 
-Discord ID: Enrique
+Discord ID: EnriqueAnguianoVara
 
-GitHub ID: Enrique
+GitHub ID: EnriqueAnguianoVara
 
 
  
