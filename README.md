@@ -126,7 +126,7 @@ In the Quantum world, h!
   - pygame==2.5.2: ``` pip install pygame ```
   - pyyaml==6.0.1: ``` pip install pyyaml ```
 
-If there is some MESA-LOADER error, please do what it says (here)[https://stackoverflow.com/questions/71010343/cannot-load-swrast-and-iris-drivers-in-fedora-35/72200748#72200748]: 
+If there is some MESA-LOADER error, please do what it says [here](https://stackoverflow.com/questions/71010343/cannot-load-swrast-and-iris-drivers-in-fedora-35/72200748#72200748): 
 
 # Challenges Faced
 
