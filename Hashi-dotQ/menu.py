@@ -4,10 +4,10 @@ from core.game import *
 from core.solver import *
 import os
 import datetime
-
+from core.settings import *
 pygame.init()
 
-position = ((width/2),(height/3))
+position = ((width/2),(height/3))   
 # ----------------- AUX METHODS ----------------------
 def btn(btn: Button, act_when_clicked, param = None, is_quit = False) -> Button:
     btn.show()
@@ -26,7 +26,8 @@ def set_game(s: str) -> None:
     g.board.set_neighbors()
     g.board.set_close_neighbors()
     g.board.set_bridges()
-    ui_gameloop(g)
+    if s == "hard": ui_lvl2_explain(g)
+    else: ui_lvl1_explain(g)
 
 def check_iter() -> None:
     for event in pygame.event.get():
@@ -72,7 +73,50 @@ def btn_clear_clicked(g: Game):
     clear_bridges(g.board.user_list_bridge)
     g.board.user_list_bridge.clear()
 
+
+def how_to_play():
+    pass
+
 # ----------------- UI METHODS ------------------------
+
+def ui_lvl1_explain(g):
+    pygame.display.update()
+    clock.tick(15)
+    while True:
+        check_iter()
+        text_display("Level 1: Quantum Hashi Initiation", 40, dark_green, (position[0]+100, position[1]-50))
+        text_display("In the mysterious world of Quantum Hashi,", 30, text, (position[0], position[1] + 50))
+        text_display("players begin their journey by connecting islands representing qubits.", 30, text, (position[0], position[1]+70))
+        text_display("Each bridge symbolizes entanglement, forging quantum connections.", 30, text, (position[0], position[1] + 90))
+        text_display("The challenge intensifies as more qubits appear on larger grids,", 30, text, (position[0], position[1] + 110))
+        text_display("guiding players toward the secrets of quantum entanglement.", 30, text, (position[0], position[1] +130))
+        
+        btn(Button(350, 375, 150, 50, green, "|Let's play!>", 30), ui_gameloop, g)
+
+        pygame.display.update()
+        clock.tick(15)
+
+def ui_lvl2_explain(g):
+    pygame.display.update()
+    clock.tick(15)
+    while True:
+        check_iter()
+
+        text_display("Level 2: Quantum Parity Puzzles", 40, dark_green, (position[0]+100, position[1]-50))
+        text_display("Having mastered quantum entanglement,", 25, text, (position[0], position[1] + 50))
+        text_display("players advance to Quantum Parity Puzzles.", 25, text, (position[0], position[1]+70))
+        text_display("Bridges, once pathways of entanglement, ", 25, text, (position[0], position[1] + 90))
+        text_display("now signify parity measurements.", 25, text, (position[0], position[1] + 110))
+        text_display("A flipped bridge means a bit-flip error,", 25, text, (position[0], position[1] +130))
+        text_display("and players must decipher the cryptic language of neighboring parity measurements", 25, text, (position[0], position[1] +150))
+        text_display("to locate and correct these quantum flaws,", 25, text, (position[0], position[1] +170))
+        text_display("all while striving to achieve perfect fidelity.", 25, text, (position[0], position[1] +190))
+
+        btn(Button(350, 400, 150, 50, green, "|Got it>", 30), ui_gameloop, g)
+
+        pygame.display.update()
+        clock.tick(15)
+
 
 def ui_play_again():
     pygame.display.update()
@@ -104,7 +148,7 @@ def ui_choose_level():
         pygame.display.update()
         clock.tick(15)
 
-def ui_gameloop(g: Game, file=None):
+def ui_gameloop(g: Game):
     pygame.display.update()
     clock.tick(15)
 
@@ -114,7 +158,7 @@ def ui_gameloop(g: Game, file=None):
         
         btn(Button(650, 180, 120, 50, green, "Hint", 25),btn_hint_clicked,g)
         btn(Button(650, 80, 120, 50, green, "Clean", 25),btn_clear_clicked,g)
-
+ 
         g.board.generate_board()
         check(clicked_list, g)
         print_bridge(g.board.user_list_bridge)
@@ -130,9 +174,11 @@ def menu():
     while True:
         check_iter()
         
-        text_display("Ĥasħi", 70, dark_green, position)
+        text_display("Quantum Hashi", 60, dark_green, position)
         btn(Button(325, 250, 150, 50, green, "|Play>", 30), ui_choose_level)
-        
+        btn(Button(325, 320, 150, 50, green, "How to play", 30), how_to_play)
+        btn(Button(325, 390, 150, 50, green, "Exit", 30), pygame.quit, is_quit=True)
+
         pygame.display.update()
         clock.tick(15)
 
