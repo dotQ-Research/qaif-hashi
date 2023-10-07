@@ -165,7 +165,7 @@ def ui_gameloop(g: Game):
     pygame.time.set_timer(timer_event, 1000)
 
     clicked_list = list()
-    counter = 10 if g.level == 1 else 30
+    counter = 7 if g.level == 1 else 30
     while True:
         clicked_list, counter = gl_check_iter(g, clicked_list, counter, timer_event)
         
