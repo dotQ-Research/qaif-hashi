@@ -4,10 +4,10 @@ from core.game import *
 from core.solver import *
 import os
 import datetime
-
+from core.settings import *
 pygame.init()
 
-position = ((width/2),(height/3))
+position = ((width/2),(height/3))   
 # ----------------- AUX METHODS ----------------------
 def btn(btn: Button, act_when_clicked, param = None, is_quit = False) -> Button:
     btn.show()
@@ -84,10 +84,14 @@ def ui_lvl1_explain(g):
     clock.tick(15)
     while True:
         check_iter()
-        # We might get one text_display per line of info
-        text_display("Let\'s encode our qubits! bla bla bla ...", 30, dark_green, (position[0], position[1] - 20))
-
-        btn(Button(350, 250, 150, 50, green, "|Let's play!>", 30), ui_gameloop, g)
+        text_display("Level 1: Quantum Hashi Initiation", 40, dark_green, (position[0]+100, position[1]-50))
+        text_display("In the mysterious world of Quantum Hashi,", 30, text, (position[0], position[1] + 50))
+        text_display("players begin their journey by connecting islands representing qubits.", 30, text, (position[0], position[1]+70))
+        text_display("Each bridge symbolizes entanglement, forging quantum connections.", 30, text, (position[0], position[1] + 90))
+        text_display("The challenge intensifies as more qubits appear on larger grids,", 30, text, (position[0], position[1] + 110))
+        text_display("guiding players toward the secrets of quantum entanglement.", 30, text, (position[0], position[1] +130))
+        
+        btn(Button(350, 375, 150, 50, green, "|Let's play!>", 30), ui_gameloop, g)
 
         pygame.display.update()
         clock.tick(15)
@@ -97,10 +101,18 @@ def ui_lvl2_explain(g):
     clock.tick(15)
     while True:
         check_iter()
-        # We might get one text_display per line of info
-        text_display("Now let's add reality. Let's add error on the grid", 30, dark_green, (position[0], position[1] - 20))
 
-        btn(Button(350, 250, 150, 50, green, "|Got it>", 30), ui_gameloop, g)
+        text_display("Level 2: Quantum Parity Puzzles", 40, dark_green, (position[0]+100, position[1]-50))
+        text_display("Having mastered quantum entanglement,", 25, text, (position[0], position[1] + 50))
+        text_display("players advance to Quantum Parity Puzzles.", 25, text, (position[0], position[1]+70))
+        text_display("Bridges, once pathways of entanglement, ", 25, text, (position[0], position[1] + 90))
+        text_display("now signify parity measurements.", 25, text, (position[0], position[1] + 110))
+        text_display("A flipped bridge means a bit-flip error,", 25, text, (position[0], position[1] +130))
+        text_display("and players must decipher the cryptic language of neighboring parity measurements", 25, text, (position[0], position[1] +150))
+        text_display("to locate and correct these quantum flaws,", 25, text, (position[0], position[1] +170))
+        text_display("all while striving to achieve perfect fidelity.", 25, text, (position[0], position[1] +190))
+
+        btn(Button(350, 400, 150, 50, green, "|Got it>", 30), ui_gameloop, g)
 
         pygame.display.update()
         clock.tick(15)

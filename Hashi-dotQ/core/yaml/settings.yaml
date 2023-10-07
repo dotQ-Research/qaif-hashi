@@ -12,7 +12,7 @@ c7 : !!python/tuple [44, 21, 81]
 c8 : !!python/tuple [45, 22, 82]
 c9 : !!python/tuple [45, 23, 80]
 white : !!python/tuple [255, 255, 255]
-black : !!python/tuple [0,0,0]
+text : !!python/tuple [255,255,255]
 max_circle : !!python/tuple [0,129,112]
 green : !!python/tuple [152,216,170] #buttons
 error_bridge : !!python/tuple [255,109,96]
