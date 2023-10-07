@@ -12,7 +12,7 @@
   - [Game Rules](#game-rules)
   - [How To Play](#how-to-play)
 - [How to Install](#how-to-install)
-- [Significance of the game](#Significanceofthegame)
+- [Significance of the game](#Significance-of-the-game)
 - [Software & Tools Used](#software--tools-used)
 - [Future Plans](#future-plans)
 - [License](#license)
