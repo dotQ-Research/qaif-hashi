@@ -36,9 +36,9 @@ GitHub ID: **AbdullahKazi500**
 
 **Enrique Anguiano Vara**
 
-Discord ID: EnriqueAnguianoVara
+Discord ID: **EnriqueAnguianoVara**
 
-GitHub ID: EnriqueAnguianoVara
+GitHub ID: **EnriqueAnguianoVara**
 
 
  
