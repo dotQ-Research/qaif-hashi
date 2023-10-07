@@ -8,9 +8,9 @@ class Randomize:
     def random_circle(self):
         value = 0
         if self.level == 0:
-            value = random.randint(4, 7)
+            value = random.randint(4, 6)
         if self.level == 1:
-            value = random.randint(8, 10)
+            value = random.randint(4, 6)
         if self.level == 2:
             value = random.randint(11, 13)
         return value
