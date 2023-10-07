@@ -171,6 +171,10 @@ Balancing the game's difficulty while incorporating quantum concepts is crucial.
 - Pygame
   
 ## Acknowledgement
+**We would like to extend my heartfelt gratitude to the Quantum AI Foundation, particularly Pawel Gora, for their exceptional efforts in organizing and hosting the Quantum Games Hackathon 2023. 
+We would also like to express my sincere appreciation to mentors, Adam Glos and Artur , whose expertise and guidance were invaluable throughout the hackathon. We would also like to Thank **Abdullah Khalid** for providing insights and advice which has been instrumental in shaping our understanding of our game.
+This hackathon has been an incredible learning experience, and it wouldn't have been possible without the support and encouragement of the Quantum AI Foundation**
+
 
 # Future Plans
 
