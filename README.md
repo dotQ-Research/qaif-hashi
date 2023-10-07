@@ -121,21 +121,11 @@ In the Quantum world, h!
 
 
 # How to Install
-Python environment is already setted up from [godot-python](https://github.com/touilleMan/godot-python)
-and [Qiskit library](https://github.com/Qiskit) is already installed for windows-64
-Install qiskit：
-1. ```cd addons/pythonscript/(choose_operating_system)```
-2. For windows:
-    ```
-    python.exe -m ensurepip
-    python.exe -m pip install qiskit
-    ```
-    For MAC:
-    ```
-    cd ox-64/bin
-    python3 -m ensurepip
-    python3 -m pip install qiskit
-    ```
+- Python & python libraries (as told is requirements.txt)
+  - python version >= 3.11.4
+  - pygame==2.5.2: ''' pip install pygame '''
+  - pyyaml==6.0.1: ''' pip install pyyaml '''
+
 
 # Challenges Faced
 
