@@ -4,8 +4,12 @@
 
 - [Team Introduction](#team-introduction)
 - [Game Summary](#game-summary)
-  - [Mission](#mission)
-  - [Story](#story)
+  - [Description](#description)
+- [Part 1](#part-1)
+  - [Game Rules](#game-rules)
+  - [How To Play](#how-to-play)
+- [Part 2](#part-2)
+  - [Game Rules](#game-rules)
   - [How To Play](#how-to-play)
 - [How to Install](#how-to-install)
 - [Challenges Faced](#challenges-faced)
@@ -79,12 +83,12 @@ In Quantum Hashi, the islands are qubits and the bridges are entanglement links.
 - How to encode quantum information using entangled qubits,
 - How to detect and correct errors using syndrome measurements.
 
-# Description:
+## Description:
 - [ ] Each island corresponds to a Qubit.
 - [ ] The number on each qubit (island) that tells you how many other qubits it's entangled with.
 - [ ] The bridges correspond in the first part to the entanglement link between pairs of qubits
-and in the second part to the syndrome measurement. It will discussed more in details.
-For a much more simplified rule, see [[Link to a text docs with the simple rules]]
+and in the second part to the syndrome measurement. It will discussed more in detail.
+For a much more simplified rule, see [simplified rules](https://github.com/dotQ-Research/qaif-hashi/blob/main/Simplified%20rules.md)
 
 # Part 1
 
