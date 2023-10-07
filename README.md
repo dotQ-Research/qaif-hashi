@@ -110,6 +110,9 @@ which states that quantum information cannot be copied exactly.
  which means that they share the maximum amount of quantum information and correlation.
 This rule is very important since it ensures that measuring directly some qubits will collapse the whole state of the system.
 
+![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/bba514fc-8eeb-4193-8e0b-c85730422655)
+
+
 ## How To Play
 
 1. **Click with your mouse on two qubits to link them. Click on the same qubits to unlink them.**
@@ -132,8 +135,13 @@ The goal is to use the clues on the syndrome measurement to detect which of the 
 Then the player, using some interactive clicks, ensures to correct the concerned qubits
 until all the syndrome measurements are back to their normal states.
 
+![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/c970fc7a-83e6-46ab-82c0-8bf636fba7e4)
+
 Beware, a faulty syndrome measurement alone will not tell us which of the two qubits of the pair is the faulty one. 
 We need to take into account the other bridges (the neighbouring syndrome measurements).
+
+![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/c132d87a-2f17-4c89-8892-d9308e7d480b)
+
 
 ## How To Play
 
