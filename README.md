@@ -60,10 +60,10 @@ GitHub ID: papidioum
 **Rahul Dev Sharma**
 
 
-Discord ID: Rahul
+Discord ID: Rahul Dev Sharma
 
 
-GitHub ID: Rahul
+GitHub ID: Rahul Dev Sharma
 
 
 ------------
@@ -148,18 +148,15 @@ We need to take into account the other bridges (the neighbouring syndrome measur
 If there is some MESA-LOADER error, please do what it says [here](https://stackoverflow.com/questions/71010343/cannot-load-swrast-and-iris-drivers-in-fedora-35/72200748#72200748): 
 
 # Challenges Faced
+Balancing the game's difficulty while incorporating quantum concepts is crucial. The game should be enjoyable for players of varying levels of quantum knowledge, from beginners to experts.
 
-Characterizing the player and conceptualizing the quantum world in a way that is easily interpretable.
-
-- We es.
-- Since there are no quantum games which were developed in hashi. We ran into a
 
 
 # Software & Tools Used  
 
-
-- Q
 - Python
+- Pygame
+  
 
 
 # Future Plans
