@@ -36,7 +36,7 @@ def check_iter() -> None:
             quit()
         if event.type == pygame.MOUSEBUTTONDOWN:
             pygame.event.post(event)
-    game_display.blit(load_file(), (0, 0))
+    game_display.blit(load_file('./Hashi-dotQ/core/img/background2.png'), (0, 0))
 
 def gl_check_iter(g: Game, clicked_list: list, counter, timer_event) -> list:
     for event in pygame.event.get():
@@ -51,9 +51,9 @@ def gl_check_iter(g: Game, clicked_list: list, counter, timer_event) -> list:
         z = g.board.update(event)
         if z is not None:
             clicked_list.append(z)
-    game_display.fill(blur_green)
-    text_display("Time left:", 40, dark_green, (position[0]+275, position[1]+150))
-    text_display(str(counter), 100, dark_green, (position[0]+325, position[1]+225))
+    game_display.blit(load_file('./Hashi-dotQ/core/img/gameBackground.jpg'), (0, 0))
+    text_display("Time left:", 40, black, (position[0]+275, position[1]+150))
+    text_display(str(counter), 100, black, (position[0]+325, position[1]+225))
     return clicked_list, counter
 
 
