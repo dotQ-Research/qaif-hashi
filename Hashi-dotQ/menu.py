@@ -73,6 +73,10 @@ def btn_clear_clicked(g: Game):
     clear_bridges(g.board.user_list_bridge)
     g.board.user_list_bridge.clear()
 
+
+def how_to_play():
+    pass
+
 # ----------------- UI METHODS ------------------------
 
 def ui_lvl1_explain(g):
@@ -158,9 +162,11 @@ def menu():
     while True:
         check_iter()
         
-        text_display("Ĥasħi", 70, dark_green, position)
+        text_display("Quantum Hashi", 60, dark_green, position)
         btn(Button(325, 250, 150, 50, green, "|Play>", 30), ui_choose_level)
-        
+        btn(Button(325, 320, 150, 50, green, "How to play", 30), how_to_play)
+        btn(Button(325, 390, 150, 50, green, "Exit", 30), pygame.quit, is_quit=True)
+
         pygame.display.update()
         clock.tick(15)
 
