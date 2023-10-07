@@ -38,18 +38,26 @@ def check_iter() -> None:
             pygame.event.post(event)
     game_display.blit(load_file(), (0, 0))
 
-# ------------------ GAMELOOP AUX METHODS ------------------------
-
-def gl_check_iter(g: Game, clicked_list: list) -> list:
+def gl_check_iter(g: Game, clicked_list: list, counter, timer_event) -> list:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             quit()
+        elif event.type == timer_event:
+            counter -= 1
+            if counter == 0:
+                pygame.time.set_timer(timer_event, 0) 
+                ui_play_again(loose = True)
         z = g.board.update(event)
         if z is not None:
             clicked_list.append(z)
     game_display.fill(blur_green)
-    return clicked_list
+    text_display("Time left:", 40, dark_green, (position[0]+275, position[1]+150))
+    text_display(str(counter), 100, dark_green, (position[0]+325, position[1]+225))
+    return clicked_list, counter
+
+
+# ------------------ GAMELOOP AUX METHODS ------------------------
 
 def btn_hint_clicked(g: Game):
     if g.number_of_hints >= 2:
@@ -74,6 +82,7 @@ def btn_clear_clicked(g: Game):
     g.board.user_list_bridge.clear()
 
 
+# Need to open the pdf or whatever is going to be
 def how_to_play():
     pass
 
@@ -118,13 +127,13 @@ def ui_lvl2_explain(g):
         clock.tick(15)
 
 
-def ui_play_again():
+def ui_play_again(loose = False):
     pygame.display.update()
     clock.tick(15)
     while True:
         check_iter()
 
-        text_display('Winner!', 50, dark_green, (position[0], position[1] - 20))
+        text_display('Winner!' if loose == False else "You loose :(", 50, dark_green, (position[0], position[1] - 20))
         text_display('Want to play again?', 50, dark_green, (position[0] + 10, position[1] + 30))
         
         btn(Button(350, 250, 100, 50, green, "|Yes>", 30), ui_choose_level)
@@ -152,9 +161,13 @@ def ui_gameloop(g: Game):
     pygame.display.update()
     clock.tick(15)
 
+    timer_event = pygame.USEREVENT+1
+    pygame.time.set_timer(timer_event, 1000)
+
     clicked_list = list()
+    counter = 10 if g.level == 1 else 30
     while True:
-        clicked_list = gl_check_iter(g, clicked_list)
+        clicked_list, counter = gl_check_iter(g, clicked_list, counter, timer_event)
         
         btn(Button(650, 180, 120, 50, green, "Hint", 25),btn_hint_clicked,g)
         btn(Button(650, 80, 120, 50, green, "Clean", 25),btn_clear_clicked,g)
