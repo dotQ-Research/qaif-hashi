@@ -110,8 +110,7 @@ which states that quantum information cannot be copied exactly.
  which means that they share the maximum amount of quantum information and correlation.
 This rule is very important since it ensures that measuring directly some qubits will collapse the whole state of the system.
 
-![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/bba514fc-8eeb-4193-8e0b-c85730422655)
-
+![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/a05f61d0-1f9d-4e0a-a738-a9899a08f324)
 
 ## How To Play
 
