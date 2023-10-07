@@ -16,6 +16,7 @@
 - [Software & Tools Used](#software--tools-used)
 - [Future Plans](#future-plans)
 - [License](#license)
+- [Acknowledgement](#Acknowledgement)
 - [References](#references)
 
 # Team Introduction
@@ -101,12 +102,12 @@ be detected and corrected without destroying the quantum information.
 In this first part, you are given numbered qubits (represented by islands) that you have 
 to connect with entanglement links (represented by bridges) following these rules:
 
-- Each qubit has a number that tells you how many other qubits it's entangled with. 
-- There can be at most one entangled link between two qubits.
-- The entangled links cannot cross each other. This rule represents the no-cloning theorem,
+- [ ] Each qubit has a number that tells you how many other qubits it's entangled with. 
+- [ ] There can be at most one entangled link between two qubits.
+- [ ] The entangled links cannot cross each other. This rule represents the no-cloning theorem,
 which states that quantum information cannot be copied exactly.
-- Qubits can only be linked perpendicularly. These are constraints that are imposed by the hardware.
-- The goal is to connect all the qubits in a fully entangled system following these rules,
+- [ ] Qubits can only be linked perpendicularly. These are constraints that are imposed by the hardware.
+- [ ] The goal is to connect all the qubits in a fully entangled system following these rules,
  which means that they share the maximum amount of quantum information and correlation.
 This rule is very important since it ensures that measuring directly some qubits will collapse the whole state of the system.
 
@@ -169,15 +170,17 @@ Balancing the game's difficulty while incorporating quantum concepts is crucial.
 - Python
 - Pygame
   
-
+## Acknowledgement
 
 # Future Plans
 
-1. The game can be adapted to a different Bell pair but that will require a
+- [ ] The game can be adapted to a different Bell pair but that will require a
 reinterpretation of the results of the parity measurements. This add some
 unecessary complexity.
-2. We could also consider the case of Phase Flip errors, it will not change the
+- [ ] We could also consider the case of Phase Flip errors, it will not change the
 principes of the game
+- [ ] we can increase difficulty in the future game levels by implementing More qubits + larger grids.
+- [ ] we can increase difficulty by implementing Harder to deduce types of error and larger number of errors in the map.
 
 
 
