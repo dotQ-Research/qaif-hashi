@@ -23,7 +23,8 @@ c6 = __data["c6"]
 c7 = __data["c7"]
 c8 = __data["c8"]
 c9 = __data["c9"]
-text = __data["text"]
+text = __data["white"]
+black = __data["black"]
 max_circle = __data["max_circle"]
 green = __data["green"]
 bright_green = __data["bright_green"]
@@ -34,6 +35,6 @@ circle_green = __data["circle_green"]
 clock = pygame.time.Clock()
 
 
-def load_file():
-    bg_img = pygame.image.load('./Hashi-dotQ/core/img/background2.png')
+def load_file(url):
+    bg_img = pygame.image.load(url)
     return pygame.transform.scale(bg_img,(width,height))
