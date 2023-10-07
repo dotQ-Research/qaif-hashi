@@ -45,13 +45,13 @@ GitHub ID: **EnriqueAnguianoVara**
 ------------
 
 
-**Bakhao**
+**Bakhao Dioum**
 
 
 Discord ID: Bakhao
 
 
-GitHub ID: Bakhao
+GitHub ID: papidioum
 
 
 
@@ -73,51 +73,70 @@ GitHub ID: Rahul
 
 
 # Game Summary
-The idea is to use Classical Hashi to understand the concept to understand the
-concept of correcting errors on entangled states using parity measurements.
-This will be done through a two part game (for each level).
+The game is called Quantum Hashi, and it is a two-part game that teaches and tests your knowledge of quantum error correction on entangled qubits. 
+The game is partially inspired by the classical Hashi game, where you have to connect islands with bridges following some rules. 
+In Quantum Hashi, the islands are qubits and the bridges are entanglement links.  In this game, we teach :
+- How to encode quantum information using entangled qubits,
+- How to detect and correct errors using syndrome measurements.
 
 # Description:
-- [ ] Each island corespond to a Qubit
-- [ ] The number on each qubit (island) corresponds to the number of qubits that are
-- [ ] entangled with the island.
-- [ ] The bridges correspond in the first part to the entanglement between qubits
-and the parity measurement in the second part. I will discuss this more in details.
+- [ ] Each island corresponds to a Qubit.
+- [ ] The number on each qubit (island) that tells you how many other qubits it's entangled with.
+- [ ] The bridges correspond in the first part to the entanglement link between pairs of qubits
+and in the second part to the syndrome measurement. It will discussed more in details.
+For a much more simplified rule, see [[Link to a text docs with the simple rules]]
 
-## Game rules
-Rules Level 1: 
-This is the only rule that has to change compared to Classical Hashi. There must
-be at most a single bridge between two qubits. If anybody can give an
-explanation of what having two entanglement links between same qubits could
-mean, that rule could stay also.
-The bridges cannot cross each other. This could mean we cannot copy quantum
-unknown quantum states du to the No Cloning Theorem.
-Qubits can only be linked perpendicularly : this could be a constraint on the
-hardware in which we want to encode our qubits.
-The goal is to connect all the qubits in the islands in a single group of entangled
-qubits, while respecting the above rules. This could be a useful ressource for
-fault-tolerance.
+# Part 1
 
-Rules Level 2:
-We start with a full map where some parity measurements have been flipped to
-1, indicating the presence of a bit flip error in some of our qubits or the parity
-measurement itself.
-The goal is to find the faulty qubits or parity measurement and correct them (by
-using some interactive clics) to ensure all the parity measurements are back to 0.
-And that's what will be considered a win.
+## Game Rules
 
+In this part, you have to create a quantum error-correcting code using entangled qubits. 
+A quantum error-correcting code is a way to encode qubits in such a way that errors can
+be detected and corrected without destroying the quantum information.
 
-## Game play 
+In this first part, you are given numbered qubits (represented by islands) that you have 
+to connect with entanglement links (represented by bridges) following these rules:
 
-In the Quantum world, h!
-
+- Each qubit has a number that tells you how many other qubits it's entangled with. 
+- There can be at most one entangled link between two qubits.
+- The entangled links cannot cross each other. This rule represents the no-cloning theorem,
+which states that quantum information cannot be copied exactly.
+- Qubits can only be linked perpendicularly. These are constraints that are imposed by the hardware.
+- The goal is to connect all the qubits in a fully entangled system following these rules,
+ which means that they share the maximum amount of quantum information and correlation.
+This rule is very important since it ensures that measuring directly some qubits will collapse the whole state of the system.
 
 ## How To Play
 
-1. **Move the ball through the blocks. Each block represents a quantum gate.**
-2. **Use the keypad to move through the hashi.**
-3. **You must avoid the noise objects, otherwise, you’ll lose the game.**
-4. [Watch the Gameplay/Walthrough](https://drive.google.com)
+1. **Click with your mouse on two qubits to link them. Click on the same qubits to unlink them.**
+2. **Once a qubit has as many entangled links as the number on it, it will switch to a different colour.**
+3. **Once all qubits are fully connected in a single group, you win.**
+4. [Watch the Gameplay/Walthrough](PUT LINK HERE)
+
+
+# Part 2
+
+## Game Rules
+In this part, you have to use syndrome measurement to detect and correct the errors on the qubits. 
+A syndrome measurement is a way to detect errors in your qubits without measuring them, to avoid the collapse.
+An example of syndrome measurement could be to check the parity (equality) of two qubits to return a true or false answer. 
+This can be used to determine whether a correction needs to occur. 
+If the syndrome measurement is different from what you expect for the encoded state, it means that there is an error on one of the qubits.
+
+We start with a fully entangled map where some syndrome measurements are shown to be faulty
+The goal is to use the clues on the syndrome measurement to detect which of the qubits have errors in them.
+Then the player, using some interactive clicks, ensures to correct the concerned qubits
+until all the syndrome measurements are back to their normal states.
+
+Beware, a faulty syndrome measurement alone will not tell us which of the two qubits of the pair is the faulty one. 
+We need to take into account the other bridges (the neighbouring syndrome measurements).
+
+## How To Play
+
+1. **Figure out which of the qubits are faulty.**
+2. **Click on them to correct them.**
+3. **You win when all the syndrome measurements (bridges) are back to their normal states .**
+4. [Watch the Gameplay/Walthrough](PUT LINK HERE)
 
 
 # How to Install
