@@ -57,13 +57,13 @@ GitHub ID: Bakhao
 
 ------------
 
-**Ricardo**
+**Rahul Dev Sharma**
 
 
-Discord ID: Ricardo
+Discord ID: Rahul
 
 
-GitHub ID: Ricardo 
+GitHub ID: Rahul
 
 
 ------------
