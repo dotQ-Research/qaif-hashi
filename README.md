@@ -114,6 +114,9 @@ This rule is very important since it ensures that measuring directly some qubits
 ![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/a05f61d0-1f9d-4e0a-a738-a9899a08f324)
 
 ## How To Play
+![hashiqs](https://github.com/dotQ-Research/qaif-hashi/assets/75779966/bb050a7e-2eea-4cb3-9d0f-e3a4331976ae)
+
+![hashii](https://github.com/dotQ-Research/qaif-hashi/assets/75779966/4130476a-3485-4633-a9db-7eff8b8d4e9d)
 
 1. **Click with your mouse on two qubits to link them. Click on the same qubits to unlink them.**
 2. **Once a qubit has as many entangled links as the number on it, it will switch to a different colour.**
