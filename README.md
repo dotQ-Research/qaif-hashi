@@ -172,10 +172,6 @@ Hashi puzzles are known for enhancing players' problem-solving skills. By adding
 
 Games can serve as a fun introduction to quantum concepts. A Quantum Error Correction Hashi Game can promote awareness and interest in quantum computing and quantum error correction among individuals who may not have prior exposure to these fields.
 
-Serious game development can contribute to research in quantum error correction. The game may serve as a platform for testing and refining quantum error correction strategies. It could even lead to innovative approaches or insights in quantum computing.
-
-Such a game can foster a community of quantum enthusiasts and learners. Players can share their strategies, discuss quantum concepts, and learn from each other. This sense of community can be a valuable resource for those interested in quantum technologies.
-
 Combining educational elements with gameplay makes learning more enjoyable and engaging. Players are more likely to invest time and effort in understanding quantum error correction if it's presented in a game format.
 
 # Software & Tools Used  
