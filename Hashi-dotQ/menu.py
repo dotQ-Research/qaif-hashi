@@ -2,7 +2,7 @@ from datetime import datetime
 from core.gameElements import Button
 from core.game import *
 from core.solver import *
-import os
+from webbrowser import open_new
 import datetime
 from core.settings import *
 pygame.init()
@@ -82,10 +82,8 @@ def btn_clear_clicked(g: Game):
     g.board.user_list_bridge.clear()
 
 
-# Need to open the pdf or whatever is going to be
 def how_to_play():
-    pass
-
+    open_new('Game-Concept-for-Quantum-Hashi.pdf')
 # ----------------- UI METHODS ------------------------
 
 def ui_lvl1_explain(g):
