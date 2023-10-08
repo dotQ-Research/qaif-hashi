@@ -73,6 +73,13 @@ GitHub ID: Rahul Dev Sharma
 
 ------------
 
+**Ricardo**
+
+
+Discord ID: Ricardo
+
+------------
+
 
 
 
