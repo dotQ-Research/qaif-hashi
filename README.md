@@ -131,7 +131,7 @@ This rule is very important since it ensures that measuring directly some qubits
 3. **Finding the most optimal entanglement map wins you the game**
 4. **Once all qubits are fully connected in a single group, you win.**
 5. [Watch the Gameplay/Walthrough]
-6. 
+6. https://www.youtube.com/watch?v=1ykR22tXQOY
 
 # Part 2
 
