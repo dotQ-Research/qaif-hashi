@@ -66,12 +66,6 @@ def check(z, g):
                 g.board.user_list_bridge.remove(g.board.user_list_bridge[s[1]])
                 z[0].conections -= 1
                 z[1].conections -= 1
-            # elif w[0]:
-            #     g.board.user_list_bridge.remove(g.board.user_list_bridge[w[1]])
-            #     z[0].conections -= 1
-            #     z[1].conections -= 1
-            #     g.board.user_list_bridge.append(Bridge(z[0], z[1], green, 2))
-                # z[0].add_bridge(z[1], 2)
             elif w[0] is False:
                 g.board.user_list_bridge.append(Bridge(z[0], z[1], green, 1))
                 z[0].add_bridge(z[1], 1)
@@ -83,9 +77,6 @@ def check(z, g):
 
 def clear_bridges(l):
     for i in l:
-        # if i.number == 2:
-        #     i.circle1.conections -= 2
-        #     i.circle2.conections -= 2
         if i.number == 1:
             i.circle1.conections -= 1
             i.circle2.conections -= 1
@@ -103,5 +94,3 @@ def print_bridge(l):
     for i in range(len(l)):
         if l[i].number == 1:
             l[i].show()
-        # if l[i].number == 2:
-        #     l[i].show_more()
