@@ -106,45 +106,52 @@ class Bridge:
         self.color = color
         self.number = value
 
+    def get_bridge_color(self):
+        if self.circle1.error == 1 or self.circle2.error == 1:
+            return red  # Set to red if either circle has an error
+        else:
+            return self.color
+    
     def show(self):
         if self.circle1.x == self.circle2.x:
             if self.circle1.y > self.circle2.y:
-                pygame.draw.line(game_display, self.color, (self.circle1.x, self.circle1.y - self.circle1.r),
-                                 (self.circle2.x, self.circle2.y + self.circle2.r))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle1.x, self.circle1.y - self.circle1.r),
+                                 (self.circle2.x, self.circle2.y + self.circle2.r),10)
             else:
-                pygame.draw.line(game_display, self.color, (self.circle2.x, self.circle2.y - self.circle2.r),
-                                 (self.circle1.x, self.circle1.y + self.circle1.r))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle2.x, self.circle2.y - self.circle2.r),
+                                 (self.circle1.x, self.circle1.y + self.circle1.r),10)
         if self.circle1.y == self.circle2.y:
             if self.circle1.x > self.circle2.x:
-                pygame.draw.line(game_display, self.color, (self.circle1.x - self.circle1.r, self.circle1.y),
-                                 (self.circle2.x + self.circle2.r, self.circle2.y))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle1.x - self.circle1.r, self.circle1.y),
+                                 (self.circle2.x + self.circle2.r, self.circle2.y),10)
             else:
-                pygame.draw.line(game_display, self.color, (self.circle2.x - self.circle2.r, self.circle2.y),
-                                 (self.circle1.x + self.circle1.r, self.circle1.y))
-
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle2.x - self.circle2.r, self.circle2.y),
+                                 (self.circle1.x + self.circle1.r, self.circle1.y),10)
+                
     def show_more(self):
         if self.circle1.x == self.circle2.x:
             if self.circle1.y > self.circle2.y:
-                pygame.draw.line(game_display, self.color, (self.circle1.x - 10, self.circle1.y - self.circle1.r),
-                                 (self.circle2.x - 10, self.circle2.y + self.circle2.r))
-                pygame.draw.line(game_display, self.color, (self.circle1.x + 10, self.circle1.y - self.circle1.r),
-                                 (self.circle2.x + 10, self.circle2.y + self.circle2.r))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle1.x - 10, self.circle1.y - self.circle1.r),
+                                 (self.circle2.x - 10, self.circle2.y + self.circle2.r),10)
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle1.x + 10, self.circle1.y - self.circle1.r),
+                                 (self.circle2.x + 10, self.circle2.y + self.circle2.r),10)
             else:
-                pygame.draw.line(game_display, self.color, (self.circle2.x - 10, self.circle2.y - self.circle2.r),
-                                 (self.circle1.x - 10, self.circle1.y + self.circle1.r))
-                pygame.draw.line(game_display, self.color, (self.circle2.x + 10, self.circle2.y - self.circle2.r),
-                                 (self.circle1.x + 10, self.circle1.y + self.circle1.r))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle2.x - 10, self.circle2.y - self.circle2.r),
+                                 (self.circle1.x - 10, self.circle1.y + self.circle1.r),10)
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle2.x + 10, self.circle2.y - self.circle2.r),
+                                 (self.circle1.x + 10, self.circle1.y + self.circle1.r),10)
         if self.circle1.y == self.circle2.y:
+
             if self.circle1.x > self.circle2.x:
-                pygame.draw.line(game_display, self.color, (self.circle1.x - self.circle1.r, self.circle1.y - 10),
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle1.x - self.circle1.r, self.circle1.y - 10),
                                  (self.circle2.x + self.circle2.r, self.circle2.y - 10))
-                pygame.draw.line(game_display, self.color, (self.circle1.x - self.circle1.r, self.circle1.y + 10),
-                                 (self.circle2.x + self.circle2.r, self.circle2.y + 10))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle1.x - self.circle1.r, self.circle1.y + 10),
+                                 (self.circle2.x + self.circle2.r, self.circle2.y + 10),10)
             else:
-                pygame.draw.line(game_display, self.color, (self.circle2.x - self.circle2.r, self.circle2.y - 10),
-                                 (self.circle1.x + self.circle1.r, self.circle1.y - 10))
-                pygame.draw.line(game_display, self.color, (self.circle2.x - self.circle2.r, self.circle2.y + 10),
-                                 (self.circle1.x + self.circle1.r, self.circle1.y + 10))
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle2.x - self.circle2.r, self.circle2.y - 10),
+                                 (self.circle1.x + self.circle1.r, self.circle1.y - 10),10)
+                pygame.draw.line(game_display, self.get_bridge_color(), (self.circle2.x - self.circle2.r, self.circle2.y + 10),
+                                 (self.circle1.x + self.circle1.r, self.circle1.y + 10),10)
 
 class Button:
     def __init__(self, x_left, y_left, w, h, color, text, size_of_letters):
@@ -196,7 +203,8 @@ class Circle:
         self.is_done = False
         self.is_clicked = False
         self.combinations = list()
-
+        self.error = random.choices([0, 1], weights=[0.7, 0.3], k=1)[0]
+ 
     def change_color(self, color):
         self.color = color
 
@@ -215,8 +223,9 @@ class Circle:
         if event.type == pygame.MOUSEBUTTONDOWN:
             if (pygame.mouse.get_pos()[0] - self.x) ** 2 + (pygame.mouse.get_pos()[1] - self.y) ** 2 <= self.r ** 2:
                 self.is_clicked = True
-                self.change_color(max_circle)
+                self.change_color(cyan)
                 return self
 
     def update_color(self):
         if self.conections == self.value: self.change_color(max_circle)
+        if self.is_clicked: self.change_color(cyan)

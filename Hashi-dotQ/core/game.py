@@ -4,6 +4,7 @@ from .gameElements import *
 from pygame import mixer
 
 mixer.init()
+
 pygame.mixer.music.set_volume(0.9)
 clic_sound = mixer.Sound("Hashi-dotQ/core/sounds/clic.mp3")
 clic_island_complete = mixer.Sound("Hashi-dotQ/core/sounds/island_complete.mp3")
@@ -72,6 +73,8 @@ def check(z, g):
 
         z[0].change_color(circle_green)
         z[1].change_color(circle_green)
+        z[0].is_clicked = False
+        z[1].is_clicked = False
         z.clear()
 
 

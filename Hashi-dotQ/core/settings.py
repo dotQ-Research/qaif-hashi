@@ -31,6 +31,8 @@ bright_green = __data["bright_green"]
 dark_green = __data["dark_green"]
 blur_green = __data["blur_green"]
 circle_green = __data["circle_green"]
+cyan = __data["cyan"]
+red = __data["red"]
 
 clock = pygame.time.Clock()
 
