@@ -168,17 +168,31 @@ If there is some MESA-LOADER error, please do what it says [here](https://stacko
 
 
 ## Significance of the Game 
-Quantum error correction is a crucial aspect of quantum computing. By gamifying it, you can make this complex topic more accessible and engaging to a broader audience, including students and enthusiasts. It can help demystify quantum error correction codes like the surface code and the principles behind them.
+Quantum error correction is a crucial aspect of quantum computing. By gamifying it, we can make this complex topic more accessible and engaging to a broader audience, including students and enthusiasts. It can help demystify quantum error correction codes like the syndrome measurements and the principles behind them.
 
-Games are an effective way to facilitate hands-on learning. A Quantum Error Correction Hashi Game provides a practical way for players to understand how qubits can be protected from errors using error correction codes. It allows players to actively participate in the error correction process within the game context.
+Our Game is based on the Classical Hashi game and there has never been a Quantum error correction game made on the Hashi Game before.
+
+Our Game idea is Unique and it is can be used for educational purposes to teach Quantum error correction in the future
+
+Games are an effective way to facilitate hands-on learning. A Quantum Error Correction Hashi Game provides a practical way for players to understand how qubits can be protected from errors.
 
 Hashi puzzles involve connecting islands with bridges under specific rules. By incorporating quantum error correction into this puzzle, players can intuitively grasp the idea that qubits (represented as islands) need to be connected or "entangled" in a specific way to correct errors, just like bridges connecting islands in Hashi.
 
-Hashi puzzles are known for enhancing players' problem-solving skills. By adding a quantum error correction element, you challenge players to not only solve traditional Hashi puzzles but also strategically correct errors in their quantum configurations. This adds complexity and depth to the game.
+Hashi puzzles are known for enhancing players' problem-solving skills. By adding a quantum error correction element, we challenge players to not only solve traditional Hashi puzzles but also strategically correct errors in their quantum configurations. This adds complexity and depth to the game.
 
 Games can serve as a fun introduction to quantum concepts. A Quantum Error Correction Hashi Game can promote awareness and interest in quantum computing and quantum error correction among individuals who may not have prior exposure to these fields.
 
 Combining educational elements with gameplay makes learning more enjoyable and engaging. Players are more likely to invest time and effort in understanding quantum error correction if it's presented in a game format.
+
+## Submission for Special Category (Sonovero R&D)
+Team DotQ Have expressed their interest for this special category from Sonovero R&D and we would like to thank the organizers for giving us the opportunity to work on this amazing problem statement
+In the context of quantum error correction, fidelity refers to a measure of how accurately a quantum state has been preserved or protected against errors. It quantifies the closeness between the ideal or desired quantum state and the actual state that results from applying quantum error correction codes or techniques.
+Fidelity is often used to assess how well a quantum error correction system maintains a quantum state that is considered ideal or target. For example, in the context of qubits used for quantum computation, the ideal state might be an entangled state or a specific quantum superposition.
+Quantum systems are susceptible to various types of errors, such as decoherence, noise, and gate imperfections. These errors can cause quantum states to deviate from their desired forms. Fidelity measures how effectively error correction mitigates or compensates for these errors.
+Fidelity is a measure of how close the final quantum state of the real-life qubits is to the ideal case. If the fidelity of logic gates is too low, calculations will fail because errors will accumulate faster than they can be corrected.
+We have introduced the concept of fidelity as a scoring system in our game 
+A high-fidelity score indicates that the quantum state is very close to the target state, while a low-fidelity score suggests that errors have accumulated and needs to be corrected .
+Players should aim to solve Hashi puzzles strategically to correct errors which will lead to higher fidelity scores.
 
 # Software & Tools Used  
 
