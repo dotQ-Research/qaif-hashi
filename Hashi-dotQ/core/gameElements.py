@@ -79,15 +79,11 @@ class Board:
             self.list_circle[i].visited = True
             for j in range(len(self.list_circle[i].close_neighbors)):
                 if self.list_circle[i].close_neighbors[j].visited is False:
-                    if len(self.list_circle[i].close_neighbors) == 1:
-                        value = 1#random.randint(1, 2)
-                    else:
-                        value = 1#random.randint(0, 2)
-                    if value != 0:
-                        self.list_circle[i].value += value
-                        self.list_circle[i].close_neighbors[j].value += value
-                        self.list_bridge.append(
-                            Bridge(self.list_circle[i], self.list_circle[i].close_neighbors[j], green, value))
+                    value = 1
+                    self.list_circle[i].value += value
+                    self.list_circle[i].close_neighbors[j].value += value
+                    self.list_bridge.append(
+                        Bridge(self.list_circle[i], self.list_circle[i].close_neighbors[j], green, value))
             if self.list_circle[i].value == 0:
                 for j in range(len(self.list_circle[i].close_neighbors)):
                     value = random.randint(1, 2)
