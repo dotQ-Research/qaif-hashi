@@ -203,6 +203,7 @@ Players should aim to solve Hashi puzzles strategically to correct errors which 
 **We would like to extend our heartfelt gratitude to the Quantum AI Foundation, particularly Pawel Gora, for their exceptional efforts in organizing and hosting the Quantum Games Hackathon 2023**. 
 We would also like to express our sincere appreciation to mentors Adam Glos and Artur , whose expertise and guidance were invaluable throughout the hackathon. We would also like to Thank **Abdullah Khalid** for providing insights and reviewing the game.
 We would also like to thank Piotr Biskupski from IBM for an insightful talk on Error mitigation with Qiskit Runtime 
+We would also like to Thanks Sonovero R&D For their challenge and to give us a chance to work on their special category 
 **This hackathon has been an incredible learning experience, and it wouldn't have been possible without the support and encouragement of the Quantum AI Foundation**
 
 
