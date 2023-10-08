@@ -91,6 +91,7 @@ In Quantum Hashi, the islands are qubits and the bridges are entanglement links.
 and in the second part to the syndrome measurement. It will discussed more in detail.
 - [ ] For a much more simplified rule, see [simplified rules](https://github.com/dotQ-Research/qaif-hashi/blob/main/Simplified%20rules.md)
 - [ ] For a quick introduction to what error correction is see [Error Correction](https://github.com/dotQ-Research/qaif-hashi/blob/main/error%20correctio.md)
+- [ ] For game concept please check [Game Concept](https://github.com/dotQ-Research/qaif-hashi/blob/main/Game-Concept-for-Quantum-Hashi.pdf)
 # Part 1
 
 ## Game Rules
