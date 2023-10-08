@@ -122,6 +122,9 @@ This rule is very important since it ensures that measuring directly some qubits
 ![image](https://github.com/dotQ-Research/qaif-hashi/assets/108539802/a05f61d0-1f9d-4e0a-a738-a9899a08f324)
 
 ## How To Play
+![hashiqs](https://github.com/dotQ-Research/qaif-hashi/assets/75779966/d2bb7564-f0ce-4838-843c-406e66e33668)
+![hashii](https://github.com/dotQ-Research/qaif-hashi/assets/75779966/17177673-aeaf-4ce7-a16e-982d5fa876c5)
+
 ![hashiqs](https://github.com/dotQ-Research/qaif-hashi/assets/75779966/bb050a7e-2eea-4cb3-9d0f-e3a4331976ae)
 
 ![hashii](https://github.com/dotQ-Research/qaif-hashi/assets/75779966/4130476a-3485-4633-a9db-7eff8b8d4e9d)
