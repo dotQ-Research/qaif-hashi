@@ -164,7 +164,7 @@ We need to take into account the other bridges (the neighbouring syndrome measur
 
 If there is some MESA-LOADER error, please do what it says [here](https://stackoverflow.com/questions/71010343/cannot-load-swrast-and-iris-drivers-in-fedora-35/72200748#72200748): 
 
-- For executing the game, just execute ``` .../qaif-hashi/Hashi-dotQ/menu.py ```
+- For executing the game, just clone / download it and execute:  ``` [your directory]/qaif-hashi/Hashi-dotQ/menu.py ```
 
 
 ## Significance of the Game 
