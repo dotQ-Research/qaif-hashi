@@ -130,7 +130,8 @@ This rule is very important since it ensures that measuring directly some qubits
 2. **Once a qubit has as many entangled links as the number on it, it will switch to a different colour.**
 3. **Finding the most optimal entanglement map wins you the game**
 4. **Once all qubits are fully connected in a single group, you win.**
-5. [Watch the Gameplay/Walthrough](PUT LINK HERE)
+5. [Watch the Gameplay/Walthrough](https://drive.google.com/file/d/1xcENP5AaaR39ywlriTWlYLD0yf8Epe3z/view?usp=sharing)
+6. https://www.youtube.com/watch?v=1ykR22tXQOY
 
 
 # Part 2
